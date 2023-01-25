@@ -6,6 +6,7 @@ from django.views.generic import ListView
 
 # Create your views here.
 
+
 class PostList(ListView):
    model = Info
    ordering = '-pk'
@@ -41,11 +42,6 @@ def createform(request):
    std.runtime = calc_time(std.runtime)
    std.save()
 
-
-
-
-
-
    return redirect('http://127.0.0.1:8000#about')
 
 
@@ -62,7 +58,6 @@ def signin(request):
                 return redirect('webapp:index')
             else:
                 return redirect('webapp:index')
-
 
 
 def logout(request):
