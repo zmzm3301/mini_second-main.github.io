@@ -41,6 +41,11 @@ def createform(request):
    std.runtime = calc_time(std.runtime)
    std.save()
 
+
+
+
+
+
    return redirect('http://127.0.0.1:8000#about')
 
 
