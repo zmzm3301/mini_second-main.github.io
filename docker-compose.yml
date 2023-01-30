@@ -3,8 +3,7 @@ version: '3'
 services:
   web:
     build: .
-#    command: python manage.py runserver 0.0.0.0:8000
-    command: gunicorn mini_second-main.wsgi:application --bind 0.0.0.0:8000
+    command: gunicorn mini_second.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - ./:/usr/src/app/
     ports:
@@ -18,8 +17,8 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     environment:
-      - POSTGRES_USER=do_it_django_db_user
-      - POSTGRES_PASSWORD=do_it_django_db_password
-      - POSTGRES_DB=do_it_django_dev
+      - POSTGRES_USER=mini_second-main-db_user
+      - POSTGRES_PASSWORD=mini_second-main_db_password
+      - POSTGRES_DB=mini_second-main_dev
 volumes:
   postgres_data:
