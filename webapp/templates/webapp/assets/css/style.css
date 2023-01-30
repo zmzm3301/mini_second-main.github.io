@@ -23,20 +23,6 @@ a:hover {
   text-decoration: none;
 }
 
-#teamOne{
-  justify-content: center;
-}
-
-#teamTwo{
-  justify-content: center;
-}
-
-#loginButton{
-  text-align: right;
-  width: 70px;
-  height: 30px;
-}
-
 h1,
 h2,
 h3,
