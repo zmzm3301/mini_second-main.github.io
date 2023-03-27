@@ -1,1 +1,1 @@
-# mini_second
+# mini_second.github.io
